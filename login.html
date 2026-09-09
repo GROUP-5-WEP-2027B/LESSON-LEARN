@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Sign Up — Web Learn Hub</title>
+<meta name="description" content="Log in or create your free Web Learn Hub account to continue learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      WEB LEARN HUB
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="test.html">Test</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="lessons.html" class="btn btn-primary">Start Learning</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+    <a href="test.html">Test</a>
+    <a href="about.html">About</a>
+    <div class="mobile-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Login</a>
+      <a href="lessons.html" class="btn btn-primary btn-block">Start Learning</a>
+    </div>
+  </div>
+</header>
+
+<main class="auth-page">
+
+  <div class="auth-visual">
+    <div class="deco-circle c1"></div>
+    <div class="deco-circle c2"></div>
+    <span class="eyebrow-badge" style="background:rgba(200,255,50,0.15);color:var(--accent);">WEB LEARN HUB</span>
+    <h2>Welcome Back</h2>
+    <p>Continue your learning journey. Pick up right where you left off, track your progress, and keep building real skills.</p>
+  </div>
+
+  <div class="auth-form-wrap">
+    <div class="auth-card">
+
+      <div class="auth-tabs">
+        <button class="active" data-target="login-form">Login</button>
+        <button data-target="signup-form">Sign Up</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form class="auth-form active" id="login-form" novalidate>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com" required>
+          <span class="field-error">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password" required>
+          <span class="field-error">Please enter your password.</span>
+        </div>
+        <div class="form-row">
+          <label class="checkbox-row"><input type="checkbox" id="remember-me"> Remember me</label>
+          <a href="#" style="color:var(--primary);font-weight:600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <div class="form-msg" id="login-msg"></div>
+        <p class="auth-switch">Don't have an account? <a href="#" data-switch-tab="signup-form">Sign Up</a></p>
+      </form>
+
+      <!-- SIGN UP FORM -->
+      <form class="auth-form" id="signup-form" novalidate>
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" placeholder="Your full name" required>
+          <span class="field-error">Please enter your full name.</span>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="you@example.com" required>
+          <span class="field-error">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="At least 6 characters" required>
+          <span class="field-error">Password must be at least 6 characters.</span>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm">Confirm Password</label>
+          <input type="password" id="signup-confirm" placeholder="Re-enter your password" required>
+          <span class="field-error">Passwords do not match.</span>
+        </div>
+        <div class="form-row">
+          <label class="checkbox-row"><input type="checkbox" id="signup-terms"> I agree to the Terms &amp; Conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        <div class="form-msg" id="signup-msg"></div>
+        <p class="auth-switch">Already have an account? <a href="#" data-switch-tab="login-form">Login</a></p>
+      </form>
+
+      <p style="font-size:0.78rem;color:var(--muted);text-align:center;margin-top:20px;">
+        This is a front-end demo. Accounts are stored locally in your browser only.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
