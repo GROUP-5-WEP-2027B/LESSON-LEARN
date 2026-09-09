@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lessons — Web Learn Hub</title>
+<meta name="description" content="Browse HTML, CSS, JavaScript, and Computer Basics lessons on Web Learn Hub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      WEB LEARN HUB
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="test.html">Test</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="lessons.html" class="btn btn-primary">Start Learning</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+    <a href="test.html">Test</a>
+    <a href="about.html">About</a>
+    <div class="mobile-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Login</a>
+      <a href="lessons.html" class="btn btn-primary btn-block">Start Learning</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="dashboard">
+
+      <aside class="sidebar">
+        <nav class="sidebar-nav" aria-label="Dashboard">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="lessons.html" class="active"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+          <a href="lessons.html"><i class="fa-solid fa-book-open"></i> Lessons</a>
+          <a href="lessons.html"><i class="fa-solid fa-chart-line"></i> My Progress</a>
+          <a href="test.html"><i class="fa-solid fa-circle-question"></i> Tests</a>
+          <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        </nav>
+      </aside>
+
+      <div class="dashboard-main">
+        <h1>Learn Web Development</h1>
+        <p class="subtitle">Choose a lesson and start learning.</p>
+
+        <div class="toolbar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="color:var(--muted);"></i>
+            <input type="text" id="lesson-search" placeholder="Search lessons..." aria-label="Search lessons">
+          </div>
+          <div class="filter-pills">
+            <button class="filter-pill active" data-category="all">All</button>
+            <button class="filter-pill" data-category="html">HTML</button>
+            <button class="filter-pill" data-category="css">CSS</button>
+            <button class="filter-pill" data-category="javascript">JavaScript</button>
+            <button class="filter-pill" data-category="computer">Computer Basics</button>
+          </div>
+        </div>
+
+        <div class="lesson-grid" id="lesson-grid-dynamic"></div>
+        <p class="no-results" id="no-results">No lessons match your search. Try a different keyword or category.</p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">&lt;/&gt;</span>WEB LEARN HUB</a>
+        <p>Learn. Build. Become a Developer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+          <li><a href="test.html">Tests</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learning</h4>
+        <ul>
+          <li><a href="lessons.html">HTML</a></li>
+          <li><a href="lessons.html">CSS</a></li>
+          <li><a href="lessons.html">JavaScript</a></li>
+          <li><a href="lessons.html">Computer Basics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>sveanvichaka5@gmail.com</li>
+          <li>+855 88 86 46 216</li>
+          <li>Phnom Penh, Cambodia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Web Learn Hub. All Rights Reserved.</span>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="lesson-modal"></div>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
