@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Contact — Web Learn Hub</title>
+<meta name="description" content="Learn about Web Learn Hub's mission and get in touch with our team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      WEB LEARN HUB
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="test.html">Test</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="lessons.html" class="btn btn-primary">Start Learning</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+    <a href="test.html">Test</a>
+    <a href="about.html">About</a>
+    <div class="mobile-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Login</a>
+      <a href="lessons.html" class="btn btn-primary btn-block">Start Learning</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="container">
+      <div class="about-hero reveal">
+        <span class="eyebrow-badge">About Web Learn Hub</span>
+        <h1 style="margin-top:14px;font-size:clamp(1.9rem,3.4vw,2.6rem);">About Web Learn Hub</h1>
+        <p style="color:var(--muted);margin-top:16px;">Web Learn Hub is a learning platform designed to help beginners understand web development and computer technology through simple lessons and practical exercises.</p>
+      </div>
+
+      <div class="about-blocks">
+        <div class="about-block reveal">
+          <h3>Our Mission</h3>
+          <p>Our mission is to make web development and computer technology approachable for absolute beginners, breaking every concept down into simple, practical steps that build real confidence.</p>
+        </div>
+        <div class="about-block reveal">
+          <h3>Our Vision</h3>
+          <p>We envision a generation of confident future developers who learned by doing — building small projects, testing their understanding, and growing one lesson at a time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow-badge">Get in Touch</span>
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? Send us a message and we'll get back to you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div><h4>Email</h4><p>support@weblearnhub.com</p></div>
+            </div>
+            <div class="contact-card">
+              <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div><h4>Phone</h4><p>+855 XX XXX XXX</p></div>
+            </div>
+            <div class="contact-card">
+              <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div><h4>Location</h4><p>Phnom Penh, Cambodia</p></div>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="Your full name" required>
+              <span class="field-error">Please enter your full name.</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="you@example.com" required>
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" placeholder="What is this about?" required>
+              <span class="field-error">Please enter a subject.</span>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="5" placeholder="Write your message here..." required></textarea>
+              <span class="field-error">Message should be at least 10 characters.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <div class="form-msg" id="contact-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">&lt;/&gt;</span>WEB LEARN HUB</a>
+        <p>Learn. Build. Become a Developer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+          <li><a href="test.html">Tests</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learning</h4>
+        <ul>
+          <li><a href="lessons.html">HTML</a></li>
+          <li><a href="lessons.html">CSS</a></li>
+          <li><a href="lessons.html">JavaScript</a></li>
+          <li><a href="lessons.html">Computer Basics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>support@weblearnhub.com</li>
+          <li>+855 XX XXX XXX</li>
+          <li>Phnom Penh, Cambodia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Web Learn Hub. All Rights Reserved.</span>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
