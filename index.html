@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Learn Hub — Learn. Build. Become a Developer.</title>
+<meta name="description" content="Learn Web Development and Computer Technology through simple lessons, practical examples, and interactive tests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      WEB LEARN HUB
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="test.html">Test</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="lessons.html" class="btn btn-primary">Start Learning</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+    <a href="test.html">Test</a>
+    <a href="about.html">About</a>
+    <div class="mobile-actions">
+      <a href="login.html" class="btn btn-outline btn-block">Login</a>
+      <a href="lessons.html" class="btn btn-primary btn-block">Start Learning</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="eyebrow-badge"><i class="fa-solid fa-graduation-cap"></i> LEARN WEB DEVELOPMENT</span>
+        <h1>Learn to <span class="grad-text">BUILD</span><br>the <span class="grad-text">WEB</span>.</h1>
+        <p class="lead">Master HTML, CSS, JavaScript and essential computer technology through simple lessons, practical examples, and interactive tests.</p>
+        <div class="hero-actions">
+          <a href="lessons.html" class="btn btn-primary">Start Learning <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="test.html" class="btn btn-outline">Take a Test <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="laptop-frame">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="A laptop displaying colorful lines of code in an editor">
+          <div class="laptop-base"></div>
+        </div>
+        <div class="float-card float-1"><span class="dot"></span>HTML</div>
+        <div class="float-card float-2"><span class="dot"></span>CSS</div>
+        <div class="float-card float-3"><span class="dot"></span>JavaScript</div>
+        <div class="float-card float-4"><span class="dot"></span>Computer Basics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <div class="feature-section reveal">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow-badge">Why Web Learn Hub</span>
+          <h2>Built for Your Learning</h2>
+          <p>Everything you need to go from curious beginner to confident developer.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Practical Learning</h3>
+            <p>Learn through real examples and practical exercises.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-book"></i></div>
+            <h3>Easy Lessons</h3>
+            <p>Simple explanations designed for beginners.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-circle-question"></i></div>
+            <h3>Interactive Tests</h3>
+            <p>Test your knowledge and track your progress.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Developer Skills</h3>
+            <p>Build the skills needed to become a web developer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR LESSONS -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-badge">Get Started</span>
+        <h2>Explore Our Lessons</h2>
+        <p>Pick a topic and start building your skills today.</p>
+      </div>
+      <div class="lesson-grid" id="home-lesson-preview"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal"><div class="stat-number" data-target="50" data-suffix="+">0</div><div class="stat-label">Lessons</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-target="1000" data-suffix="+">0</div><div class="stat-label">Students</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-target="20" data-suffix="+">0</div><div class="stat-label">Practice Tests</div></div>
+        <div class="stat-item reveal"><div class="stat-number" data-target="95" data-suffix="%">0</div><div class="stat-label">Learning Satisfaction</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <div class="testimonial-section reveal">
+      <div class="container">
+        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+        <blockquote>Learning to code is not about memorizing everything. It is about understanding, practicing, and building.</blockquote>
+        <cite>— Web Learn Hub Student</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Start Learning?</h2>
+      <p>Build your knowledge today and take your first step toward becoming a web developer.</p>
+      <div class="hero-actions">
+        <a href="login.html" class="btn btn-primary">Join Web Learn Hub</a>
+        <a href="lessons.html" class="btn btn-outline">Explore Lessons</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">&lt;/&gt;</span>WEB LEARN HUB</a>
+        <p>Learn. Build. Become a Developer.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lessons.html">Lessons</a></li>
+          <li><a href="test.html">Tests</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learning</h4>
+        <ul>
+          <li><a href="lessons.html">HTML</a></li>
+          <li><a href="lessons.html">CSS</a></li>
+          <li><a href="lessons.html">JavaScript</a></li>
+          <li><a href="lessons.html">Computer Basics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>support@weblearnhub.com</li>
+          <li>+855 XX XXX XXX</li>
+          <li>Phnom Penh, Cambodia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Web Learn Hub. All Rights Reserved.</span>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
